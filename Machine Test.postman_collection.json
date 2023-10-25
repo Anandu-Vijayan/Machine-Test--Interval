@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "aa0b6015-ef95-4208-9c1c-d310e09bf28e",
+		"name": "Machine Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27292363"
+	},
+	"item": [
+		{
+			"name": "create tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Heading",
+							"value": "Arabic class",
+							"type": "text"
+						},
+						{
+							"key": "Discription",
+							"value": "Caompleted ",
+							"type": "text"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/ANAND/Downloads/PNG_transparency_demonstration_1.png"
+						},
+						{
+							"key": "Status",
+							"value": "Low",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:5000/create_task"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/getAll_products"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Heading",
+							"value": "English",
+							"type": "text"
+						},
+						{
+							"key": "Discription",
+							"value": "done",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "high",
+							"type": "text"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/ANAND/Downloads/images.jpg"
+						}
+					]
+				},
+				"url": "http://localhost:5000/update_task/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/delete_task/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Single Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/single_task/2"
+			},
+			"response": []
+		}
+	]
+}
